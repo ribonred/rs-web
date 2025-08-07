@@ -1,0 +1,11 @@
+[package]
+name = "security"
+version = "0.1.0"
+edition = "2024"
+
+[dependencies]
+sha2 = "0.10"
+pbkdf2 = { version = "0.12", features = ["hmac"] }
+base64 = "0.22"
+rand = "0.8"
+hmac = "0.12"

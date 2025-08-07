@@ -1,0 +1,17 @@
+[package]
+name = "entity"
+version = "0.1.0"
+edition = "2024"
+publish = false
+
+[dependencies]
+sea-orm = { version = "1.1.0", features = [
+    "sqlx-postgres",
+    "runtime-tokio-rustls",
+    "macros",
+] }
+serde = { version = "1.0", features = ["derive"] }
+schemars = { package = "apistos-schemars", version = "0.8" }
+security = { path = "../security" }
+async-trait = "0.1"
+chrono = "0.4.41"

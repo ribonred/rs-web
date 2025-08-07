@@ -1,0 +1,14 @@
+[application]
+host = "127.0.0.1"
+port = 8080
+environment = "development"
+api_version = "v1"
+
+[database]
+host = "localhost"
+port = 5432
+name = "rust_api_dev"
+username = "postgres"
+password = "postgres"
+max_connections = 25
+min_connections = 10
